@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S) #here F=format, H=Hour, M=minutes
-SCRIPT_NAME=$($0 | cut -d "." -f1) #here we remove file name after . we used delimeter and cut command
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1) #here we remove file name after . we used delimeter and cut command
 LOG_FILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 validate(){
