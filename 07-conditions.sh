@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NUMBER=$1
-
+# -ge, -lt, -eq, -ge, -le
 if [ $NUMBER -ge 10 ]
 then
   echo "Given $NUMBER is greater than 10"
