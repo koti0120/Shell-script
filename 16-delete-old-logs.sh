@@ -17,7 +17,7 @@ FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
 
 echo "files to delete: $FILES"
 
-while 
-do
-  rm -rf 
-done<<<$FILE
+# while 
+# do
+#   rm -rf 
+# done<<<$FILE
