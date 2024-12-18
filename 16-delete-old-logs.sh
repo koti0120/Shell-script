@@ -15,9 +15,9 @@ fi
 
 FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
 
-echo "files to delete: $FILES"
+# echo "files to delete: $FILES"
 
-# while 
-# do
-#   rm -rf 
-# done<<<$FILE
+while IFS= read -r line #IFS=Internal Field Separator
+do
+  echo "deleting file: $line"
+done<<<$FILES  #<<< means input and >>> means output
